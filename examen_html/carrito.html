@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Tu Carrito</h1>
+  </header>
+
+  <main>
+    <section id="productos">
+      <h2>Productos Disponibles</h2>
+
+      <div class="producto-card" data-id="1" data-nombre="galletas" data-precio="5000">
+        <h3>galletas</h3>
+        <p>Precio:5000</p>
+        <button onclick="agregarAlCarrito(1, 'galletas', 5000)">Añadir al Carrito</button>
+      </div>
+
+      <div class="producto-card" data-id="2" data-nombre="pasteles o tortas" data-precio="35.75">
+        <h3>pasteles o tortas</h3>
+        <p>Precio: $35.000</p>
+        <button onclick="agregarAlCarrito(2, 'pasteles o tortas', 35000)">Añadir al Carrito</button>
+      </div>
+
+      <div class="producto-card" data-id="3" data-nombre="pan integral" data-precio="85.00">
+        <h3>pan integral</h3>
+        <p>Precio: $5000</p>
+        <button onclick="agregarAlCarrito(3, 'pan integral', 5000)">Añadir al Carrito</button>
+      </div>
+    </section>
+
+    <aside id="carrito">
+      <h2> Tu Carrito</h2>
+      <ul id="lista-carrito">
+      </ul>
+      <p id="total-carrito">Total: $0.00</p>
+      <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+  <nav>
+    <a href="/index.html">Inicio</a>
+    <a href="/contacto.html">Contacto</a>
+  </nav>
+</body>
+
+</html>
